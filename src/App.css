@@ -1,0 +1,180 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.garage-inputs {
+  flex: 0 0 auto;
+}
+
+.garage-inputs h3 {
+  margin: 0 0 0.5rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-row label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.input-row input[type="number"] {
+  width: 70px;
+  padding: 0.3rem 0.4rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.unit {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.car-selector {
+  flex: 1;
+}
+
+.car-selector h3 {
+  margin: 0 0 0.5rem;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 1.5rem;
+}
+
+.car-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.car-checkbox input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.color-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.car-dims {
+  color: #888;
+  font-size: 0.75rem;
+  margin-left: 0.3rem;
+}
+
+.visualization {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.visualization svg {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.summary {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.summary h3 {
+  margin: 0 0 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 2px solid #ddd;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #666;
+}
+
+td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+td .color-dot {
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+
+tr.fits .result {
+  color: #2E7D32;
+  font-weight: bold;
+}
+
+tr.no-fits .result {
+  color: #C62828;
+  font-weight: bold;
+}
+
+tr.no-fits td {
+  background: #fff5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .visualization svg {
+    background: #1a1a2e;
+    border-color: #444;
+  }
+
+  .input-row input[type="number"] {
+    background: #2a2a2a;
+    color: #eee;
+    border-color: #555;
+  }
+
+  th {
+    color: #aaa;
+    border-bottom-color: #444;
+  }
+
+  td {
+    border-bottom-color: #333;
+  }
+
+  tr.no-fits td {
+    background: #2a1a1a;
+  }
+}
